@@ -5,9 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
-
-
-
+        task6();
 
     }
 
@@ -71,6 +69,22 @@ public class Main {
             System.out.println("Если взрослого нет, то кататься нельзя!");
         } else if (childAge >= 14) {
             System.out.println("Если возраст ребенка равен " + childAge + " годам, то он может кататься на аттракционе без сопровождения взрослого");
+        }
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        int totalPlaces = 102;
+        int totalSeatPlaces = 60;
+        int totalStandPlaces = totalPlaces - totalSeatPlaces;
+        int usedSeat = 60;
+        int usedStand = 42;
+        int freeSeat = totalSeatPlaces - usedSeat;
+        int freeStand = totalStandPlaces - usedStand;
+        boolean overloading = freeSeat <= usedSeat && freeStand <= usedStand;
+        if (overloading) {
+            System.out.println("Вагон переполнен!"); }
+        else if (freeSeat > usedSeat || freeStand > usedStand) {
+            System.out.println("В вагоне свободны " + freeSeat + " сидячих и " + freeStand + " стоячих мест");
         }
     }
 
