@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
 
     }
 
@@ -85,6 +86,15 @@ public class Main {
             System.out.println("Вагон переполнен!"); }
         else if (freeSeat > usedSeat || freeStand > usedStand) {
             System.out.println("В вагоне свободны " + freeSeat + " сидячих и " + freeStand + " стоячих мест");
+        }
+    }
+    public static void task7(){
+        System.out.println("Задача 7");
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (two < three || one < three) {
+            System.out.println(three + " больше " + two + " и больше " + one);
         }
     }
 
